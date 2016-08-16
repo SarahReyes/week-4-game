@@ -1,1 +1,51 @@
+/*
+font-family: 'Sigmar One', cursive;
+font-family: 'Londrina Outline', cursive;
+font-family: 'Bungee Outline', cursive;
+font-family: 'Passion One', cursive;*/
+
+.background {
+  background-image: url(../images/lego-background-gray.jpg);
+  background-repeat: no-repeat;
+  width: 1280px;
+  height: 800px;
+  z-index: 10px;
+  position: absolute;
+  filter: blur(2px) grayscale(60%);
+  -webkit-filter: blur(2px) grayscale(60%);
+  -moz-filter: blur(2px) grayscale(60%);
+  -o-filter: blur(2px) grayscale(60%);
+  -ms-filter: blur(2px) grayscale(60%);
+}
+.game-name {
+  font-size: 78px;
+  z-index: 15px;
+  position: fixed;
+  font-family: 'Passion One', cursive;
+
+}
+.game-directions {
+  font-size: 24px;
+  z-index: 15px;
+  position: fixed;
+  margin-top: 100px;
+  font-family: 'Passion One', cursive;
+}
+.computer-number {
+  font-size: 38px;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  z-index: 15px;
+  position: fixed;
+  margin-top: 150px;
+}
+#blu {
+  z-index: 100px;
+  position: fixed;
+  height: 100px;
+  width: auto;
+  margin-top: 300px
+}
+
 
