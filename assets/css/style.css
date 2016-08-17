@@ -32,10 +32,9 @@ font-family: 'Passion One', cursive;*/
   font-family: 'Passion One', cursive;
 }
 .computer-number {
-  font-size: 38px;
+  font-size: 60px;
   height: 100px;
   width: 100px;
-
   z-index: 15px;
   position: fixed;
   margin-top: 150px;

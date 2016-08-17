@@ -1,3 +1,6 @@
+//use single quotes '' when you're referencing something already in html
+//use double quotes "" when writing html in jQuery
+
 
   var counter = 0;
   var numbers = [10, 1, 7, 5];
@@ -8,15 +11,21 @@
   }
  var computerRandom = (getRandomInt(19, 120));
  console.log(computerRandom);
- //display comuterRandom in html
- $(".computer-number").text(computerRandom);
+
+
 
   //4 buttons are displayed on the screen
 
 
 $(document).ready(function() {
-  $(".computer-number").text(computerRandom);
-  //4 buttons each have a random hidden value between 1 - 12
+  //display randomly picked computer number in html
+  $('.computer-number').text(computerRandom);
+  //button with a hidden value from var numbers
+  $('blue-lego').attr("src", "assets/images/lego-blue.png");
+
+
+
+
 //   var image1 = $("<img>");
 //   image1.attr("src", "assets/images/lego-blue.png");
 //   image1.attr("click-num", numbers[0]);
