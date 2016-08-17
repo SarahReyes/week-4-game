@@ -22,7 +22,6 @@ font-family: 'Passion One', cursive;*/
   z-index: 15px;
   position: fixed;
   font-family: 'Passion One', cursive;
-
 }
 .game-directions {
   font-size: 24px;
@@ -39,13 +38,37 @@ font-family: 'Passion One', cursive;*/
   position: fixed;
   margin-top: 150px;
 }
+#green-lego {
+  z-index: 100px;
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  margin-top: 320px;
+  margin-left: 100px;
+}
 #blue-lego {
   z-index: 100px;
   position: fixed;
-  height: 100px;
-  width: auto;
-  margin-top: 300px
+  height: 200px;
+  width: 200px;
+  margin-top: 320px;
+  margin-left: 300px;
 }
-
+#yellow-lego {
+  z-index: 100px;
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  margin-top: 320px;
+  margin-left: 500px;
+}
+#red-lego {
+  z-index: 100px;
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  margin-top: 320px;
+  margin-left: 700px;
+}
 
 
