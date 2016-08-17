@@ -1,46 +1,40 @@
 
-  var computerRandom = "";
   var counter = 0;
   var numbers = [10, 1, 7, 5];
-  var numberToGuess = 53;
 
-  //computer picks and displays a random number between 19 - 120
+  //computer picks a random number between 19 - 120
   function getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  console.log(getRandomInt(19, 120));
+ var computerRandom = (getRandomInt(19, 120));
+ console.log(computerRandom);
+ //display comuterRandom in html
+ $(".computer-number").text(computerRandom);
 
   //4 buttons are displayed on the screen
 
 
 $(document).ready(function() {
+  $(".computer-number").text(computerRandom);
   //4 buttons each have a random hidden value between 1 - 12
-  var image1 = $("<img>");
-  image1.attr("src", "assets/images/lego-blue.png");
-  image1.attr("click-num", numbers[0]);
-  image1.addClass("clickImage");
-  $('#image1').append(image1);
-
-  // var image1 = $("<img>");
-  // image1.attr("src", "assets/images/lego-blue.png");
-  // image1.attr("click-num", numbers[0]);
-  // image1.addClass("clickImage");
-  // $('#image1').append(image1);
+//   var image1 = $("<img>");
+//   image1.attr("src", "assets/images/lego-blue.png");
+//   image1.attr("click-num", numbers[0]);
+//   image1.addClass("clickImage");
+//   $("#blue-lego").append(clickImage);
 
 
-  $('.clickImage').on('click', function(){
-        counter = counter + parseInt($(this).data('num'));
+//   $('.clickImage').on('click', function(){
+//         counter = counter + parseInt($(this).data('num'));
 
-        $('#yourNumber').text(counter);
+//         $('#yourNumber').text(counter);
 
-        if (counter == numberToGuess){
-          alert('You won!!!!');
-        }else if( counter > numberToGuess){
-          alert('You lost!');
-        }
-console.log(image1);
-  });
+
+// console.log(clickImage);
+  // });
 });
+
+
 
   //when the user clicks a button, add the value of the button to the user's sum
   // $(document).ready(function() {

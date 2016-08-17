@@ -5,7 +5,7 @@ font-family: 'Bungee Outline', cursive;
 font-family: 'Passion One', cursive;*/
 
 .background {
-  background-image: url(../images/lego-background-gray.jpg);
+  background-image: url(../images/lego-background-lightgray.jpg);
   background-repeat: no-repeat;
   width: 1280px;
   height: 800px;
@@ -35,17 +35,18 @@ font-family: 'Passion One', cursive;*/
   font-size: 38px;
   height: 100px;
   width: 100px;
-  background-color: red;
+
   z-index: 15px;
   position: fixed;
   margin-top: 150px;
 }
-#blu {
+#blue-lego {
   z-index: 100px;
   position: fixed;
   height: 100px;
   width: auto;
   margin-top: 300px
 }
+
 
 
