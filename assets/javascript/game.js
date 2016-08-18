@@ -9,8 +9,20 @@
   function getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
   }
- var computerRandom = (getRandomInt(19, 120));
+ var computerRandom = "Number To Guess: " + (getRandomInt(19, 120));
  console.log(computerRandom);
+
+ var greenLego = (getRandomInt(1, 12));
+ console.log(greenLego);
+
+ var blueLego = (getRandomInt(1, 12));
+ console.log(blueLego);
+
+ var yellowLego = (getRandomInt(1, 12));
+ console.log(yellowLego);
+
+ var redLego = (getRandomInt(1, 12));
+ console.log(redLego);
 
 
 
@@ -20,12 +32,13 @@ $(document).ready(function() {
   $('.computer-number').text(computerRandom);
   //user clicks on a lego and their sum increments
   $('.click-images').on('click', function() {
-    counter = counter + parseInt('random-num');
+    counter = counter + greenLego;
     $('#user-sum').text(counter);
     console.log(counter);
-    console.log(parseInt);
+
   });
-  $('#green-lego').attr('random-num', getRandomInt(1, 12));
+// $('#green-lego').attr('num', getRandomInt(1, 12));
+
 });
 
 

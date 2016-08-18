@@ -3,7 +3,9 @@ font-family: 'Sigmar One', cursive;
 font-family: 'Londrina Outline', cursive;
 font-family: 'Bungee Outline', cursive;
 font-family: 'Passion One', cursive;*/
-
+body {
+  font-family: 'Passion One', cursive;
+}
 .background {
   background-image: url(../images/lego-background-lightgray.jpg);
   background-repeat: no-repeat;
@@ -11,24 +13,27 @@ font-family: 'Passion One', cursive;*/
   height: 800px;
   z-index: 10px;
   position: fixed;
-  filter: blur(2px) grayscale(60%);
-  -webkit-filter: blur(2px) grayscale(60%);
-  -moz-filter: blur(2px) grayscale(60%);
-  -o-filter: blur(2px) grayscale(60%);
-  -ms-filter: blur(2px) grayscale(60%);
+  filter: blur(3px) grayscale(60%);
+  -webkit-filter: blur(3px) grayscale(60%);
+  -moz-filter: blur(3px) grayscale(60%);
+  -o-filter: blur(3px) grayscale(60%);
+  -ms-filter: blur(3px) grayscale(60%);
 }
 .game-name {
-  font-size: 78px;
+  font-size: 85px;
+  letter-spacing: 10px;
+  margin-top: 40px;
+  margin-left: 330px;
   z-index: 15px;
   position: fixed;
-  font-family: 'Passion One', cursive;
+
 }
 .game-directions {
-  font-size: 24px;
+  font-size: 40px;
+  margin-top: 150px;
+  margin-left: 270px;
   z-index: 15px;
   position: fixed;
-  margin-top: 100px;
-  font-family: 'Passion One', cursive;
 }
 .computer-number {
   font-size: 60px;
@@ -37,7 +42,7 @@ font-family: 'Passion One', cursive;*/
   z-index: 15px;
   position: fixed;
   margin-top: 150px;
-  font-family: 'Passion One', cursive;
+
 }
 #green-lego {
   z-index: 100px;
@@ -79,7 +84,7 @@ font-family: 'Passion One', cursive;*/
   margin-top: 220px;
   margin-left: 200px;
   background-color: white;
-  font-family: 'Passion One', cursive;
+
 }
 
 
