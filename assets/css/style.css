@@ -28,12 +28,19 @@ body {
   margin-left: 330px;
   z-index: 15px;
   position: fixed;
-
 }
-.game-directions {
+.directions-line-one {
   font-size: 40px;
   letter-spacing: 2px;
-  margin-top: 150px;
+  margin-top: 140px;
+  margin-left: 400px;
+  z-index: 15px;
+  position: fixed;
+}
+.directions-line-two {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-top: 180px;
   margin-left: 220px;
   z-index: 15px;
   position: fixed;
@@ -42,7 +49,7 @@ body {
   font-size: 60px;
   height: 100px;
   width: 300px;
-  margin-top: 240px;
+  margin-top: 260px;
   margin-left: 300px;
   z-index: 15px;
   position: fixed;
@@ -50,11 +57,11 @@ body {
 #user-sum {
   font-size: 60px;
   height: 100px;
-  width: 300px;
+  width: 350px;
   z-index: 100px;
   position: fixed;
-  margin-top: 240px;
-  margin-left: 800px;
+  margin-top: 290px;
+  margin-left: 720px;
 }
 #green-lego {
   z-index: 100px;

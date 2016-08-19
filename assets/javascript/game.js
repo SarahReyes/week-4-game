@@ -4,7 +4,7 @@
 // Each lego should have a random hidden value between 1 - 12
 
 var counter = 0;
-var userGuess = 0;
+var userSum = 0;
 
 // computer picks a random number between min, max
 function getRandomInt(min, max) {
@@ -31,30 +31,40 @@ $(document).ready(function() {
 
     // user clicks on the green lego and it returns the value
     $('#green-lego').click(function() {
-        userGuess = userGuess + greenLegoNumber;
-        console.log(userGuess);
+        userSum = userSum + greenLegoNumber;
+        console.log(userSum);
+        // display the userSum
+        $('#user-sum').text("Your Total: " + userSum);
+        // else/ifs will need to go in every one of these functions
     });
     // user clicks on the blue lego and it returns the value
     $('#blue-lego').click(function() {
-        userGuess = userGuess + blueLegoNumber;
-        console.log(userGuess);
+        userSum = userSum + blueLegoNumber;
+        console.log(userSum);
+        // display the userSum
+        $('#user-sum').text("Your Total: " + userSum);
+        // else/ifs will need to go in every one of these functions
     });
     // user clicks on the yellow lego and it returns the value
     $('#yellow-lego').click(function() {
-        userGuess = userGuess + yellowLegoNumber;
-        console.log(userGuess);
+        userSum = userSum + yellowLegoNumber;
+        console.log(userSum);
+        // display the userSum
+        $('#user-sum').text("Your Total: " + userSum);
+        // else/ifs will need to go in every one of these functions
     });
     // user clicks on the red lego and it returns the value
     $('#red-lego').click(function() {
-        userGuess = userGuess + redLegoNumber;
-        console.log(userGuess);
+        userSum = userSum + redLegoNumber;
+        console.log(userSum);
+        // display the userSum
+        $('#user-sum').text("Your Total: " + userSum);
+        // else/ifs will need to go in every one of these functions
     });
 
 
-
-
-    // display the user click
-    $('#user-sum').text();
+    // display the userSum
+    $('#user-sum').text("Your Total: " + userSum);
 
 
 });
