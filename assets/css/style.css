@@ -5,6 +5,8 @@ font-family: 'Bungee Outline', cursive;
 font-family: 'Passion One', cursive;*/
 body {
   font-family: 'Passion One', cursive;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 .background {
   background-image: url(../images/lego-background-lightgray.jpg);
@@ -30,61 +32,59 @@ body {
 }
 .game-directions {
   font-size: 40px;
+  letter-spacing: 2px;
   margin-top: 150px;
-  margin-left: 270px;
+  margin-left: 220px;
   z-index: 15px;
   position: fixed;
 }
 .computer-number {
   font-size: 60px;
   height: 100px;
-  width: 100px;
+  width: 300px;
+  margin-top: 240px;
+  margin-left: 300px;
   z-index: 15px;
   position: fixed;
-  margin-top: 150px;
-
+}
+#user-sum {
+  font-size: 60px;
+  height: 100px;
+  width: 300px;
+  z-index: 100px;
+  position: fixed;
+  margin-top: 240px;
+  margin-left: 800px;
 }
 #green-lego {
   z-index: 100px;
   position: fixed;
-  height: 200px;
-  width: 200px;
-  margin-top: 320px;
-  margin-left: 100px;
+  height: 180px;
+  width: 180px;
+  margin-top: 420px;
+  margin-left: 200px;
 }
 #blue-lego {
   z-index: 100px;
   position: fixed;
-  height: 200px;
-  width: 200px;
-  margin-top: 320px;
-  margin-left: 300px;
+  height: 230px;
+  width: 230px;
+  margin-top: 420px;
+  margin-left: 410px;
 }
 #yellow-lego {
   z-index: 100px;
   position: fixed;
-  height: 200px;
-  width: 200px;
-  margin-top: 320px;
-  margin-left: 500px;
+  height: 180px;
+  width: 180px;
+  margin-top: 420px;
+  margin-left: 680px;
 }
 #red-lego {
   z-index: 100px;
   position: fixed;
   height: 300px;
   width: 300px;
-  margin-top: 320px;
-  margin-left: 700px;
+  margin-top: 360px;
+  margin-left: 850px;
 }
-#user-sum {
-  z-index: 100px;
-  position: fixed;
-  height: 100px;
-  width: 100px;
-  margin-top: 220px;
-  margin-left: 200px;
-  background-color: white;
-
-}
-
-

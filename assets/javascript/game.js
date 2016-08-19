@@ -2,54 +2,61 @@
 //use double quotes "" when writing html in jQuery
 //Each crystal should have a random hidden value between 1 - 12
 
+var counter;
+var userNumString = "Your Number: ";
+// var numbers = [10, 7, 4, 1];
 
-  var counter = 0;
+//computer picks a random number between 19 - 120
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+var computerRandom = "Number To Match: " + (getRandomInt(19, 120));
+console.log(computerRandom);
 
-  //computer picks a random number between 19 - 120
-  function getRandomInt(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
- var computerRandom = "Number To Guess: " + (getRandomInt(19, 120));
- console.log(computerRandom);
+//assign a number to each lego
+var greenLego = getRandomInt(1, 12);
+console.log(greenLego);
 
- var greenLego = (getRandomInt(1, 12));
- console.log(greenLego);
+var blueLego = getRandomInt(1, 12);
+console.log(blueLego);
 
- var blueLego = (getRandomInt(1, 12));
- console.log(blueLego);
+var yellowLego = getRandomInt(1, 12);
+console.log(yellowLego);
 
- var yellowLego = (getRandomInt(1, 12));
- console.log(yellowLego);
-
- var redLego = (getRandomInt(1, 12));
- console.log(redLego);
-
-
+var redLego = getRandomInt(1, 12);
+console.log(redLego);
 
 
 $(document).ready(function() {
-  //display randomly picked computer number in html
-  $('.computer-number').text(computerRandom);
-  //user clicks on a lego and their sum increments
-  $('.click-images').on('click', function() {
-    counter = counter + greenLego;
-    $('#user-sum').text(counter);
-    console.log(counter);
+    //display randomly picked computer number in html
+    $('.computer-number').text(computerRandom);
 
-  });
-// $('#green-lego').attr('num', getRandomInt(1, 12));
+
+
+
+
+
+        // legos.attr('data-num', numbers[i]);
+
+        // legos.attr('alt', 'click-images');
+
+        // legos.addClass('click-on-lego');
+
+        // $('.click-images').append(legos);
+
+
+
+    //user clicks on a lego and their sum increments
+    // $('.click-images').on('click', function(clickEvent) {
+        //capture what number is clicked
+        // console.log(clickEvent.id);
+
+    // });
 
 });
 
 
-// counter = counter + parseInt($(this).data('num'));
 
-  //when the user clicks a button, add the value of the button to the user's sum
-  // $(document).ready(function() {
-  //     $("#btnSubmit").click(function(){
-  //         alert("button");
-  //     });
-  // });
 
   //user's sum box increments by the value of the button, each time a button is clicked
 
@@ -70,7 +77,3 @@ $(document).ready(function() {
 
 
   //when the game re-starts, the computer picks a new random number between 19 - 120
-
-
-
-
