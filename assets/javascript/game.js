@@ -2,7 +2,7 @@
 //use double quotes "" when writing html in jQuery
 //Each crystal should have a random hidden value between 1 - 12
 
-var counter;
+var counter = 0;
 var userNumString = "Your Number: ";
 // var numbers = [10, 7, 4, 1];
 
@@ -14,18 +14,17 @@ var computerRandom = "Number To Match: " + (getRandomInt(19, 120));
 console.log(computerRandom);
 
 //assign a number to each lego
-var greenLego = getRandomInt(1, 12);
-console.log(greenLego);
+var greenLegoNumber = getRandomInt(1, 12);
+    console.log(greenLegoNumber);
 
-var blueLego = getRandomInt(1, 12);
-console.log(blueLego);
+var blueLegoNumber = getRandomInt(1, 12);
+    console.log(blueLegoNumber);
 
-var yellowLego = getRandomInt(1, 12);
-console.log(yellowLego);
+var yellowLegoNumber = getRandomInt(1, 12);
+    console.log(yellowLegoNumber);
 
-var redLego = getRandomInt(1, 12);
-console.log(redLego);
-
+var redLegoNumber = getRandomInt(1, 12);
+    console.log(redLegoNumber);
 
 $(document).ready(function() {
     //display randomly picked computer number in html
@@ -34,24 +33,19 @@ $(document).ready(function() {
 
 
 
-
-
-        // legos.attr('data-num', numbers[i]);
-
-        // legos.attr('alt', 'click-images');
-
-        // legos.addClass('click-on-lego');
-
-        // $('.click-images').append(legos);
-
-
-
-    //user clicks on a lego and their sum increments
-    // $('.click-images').on('click', function(clickEvent) {
-        //capture what number is clicked
-        // console.log(clickEvent.id);
-
-    // });
+     // user clicks on a lego and it returns the value
+    $('#green-lego').click(function() {
+        console.log(greenLegoNumber);
+    });
+    $('#blue-lego').click(function() {
+        console.log(blueLegoNumber);
+    });
+    $('#yellow-lego').click(function() {
+        console.log(yellowLegoNumber);
+    });
+    $('#red-lego').click(function() {
+        console.log(redLegoNumber);
+    });
 
 });
 
