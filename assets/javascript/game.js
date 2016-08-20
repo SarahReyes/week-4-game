@@ -34,15 +34,33 @@ $(document).ready(function() {
         userSum = userSum + greenLegoNumber;
         console.log(userSum);
         // display the userSum
-        $('#user-sum').text("Your Total: " + userSum);
-        // else/ifs will need to go in every one of these functions
+        $('#user-sum').text("Your Number: " + userSum);
+        // will determine if the user has won
+        if (userSum < computerRandom) {
+            //user can continue clicking
+        }
+        else if (userSum == computerRandom) {
+            // Function for the modal
+            function overlay() {
+            el = document.getElementById("user-win");
+            el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+            }
+        }
+        else {
+            // Function for the modal
+            function overlay() {
+            el = document.getElementById("user-lose");
+            el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+            }
+        }
+
     });
     // user clicks on the blue lego and it returns the value
     $('#blue-lego').click(function() {
         userSum = userSum + blueLegoNumber;
         console.log(userSum);
         // display the userSum
-        $('#user-sum').text("Your Total: " + userSum);
+        $('#user-sum').text("Your Number: " + userSum);
         // else/ifs will need to go in every one of these functions
     });
     // user clicks on the yellow lego and it returns the value
@@ -50,7 +68,7 @@ $(document).ready(function() {
         userSum = userSum + yellowLegoNumber;
         console.log(userSum);
         // display the userSum
-        $('#user-sum').text("Your Total: " + userSum);
+        $('#user-sum').text("Your Number: " + userSum);
         // else/ifs will need to go in every one of these functions
     });
     // user clicks on the red lego and it returns the value
@@ -58,13 +76,13 @@ $(document).ready(function() {
         userSum = userSum + redLegoNumber;
         console.log(userSum);
         // display the userSum
-        $('#user-sum').text("Your Total: " + userSum);
+        $('#user-sum').text("Your Number: " + userSum);
         // else/ifs will need to go in every one of these functions
     });
 
 
     // display the userSum
-    $('#user-sum').text("Your Total: " + userSum);
+    $('#user-sum').text("Your Number: " + userSum);
 
 
 });

@@ -1,55 +1,61 @@
 <!DOCTYPEhtml>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Londrina+Outline|Passion+One|Sigmar+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Londrina+Outline|Passion+One|Sigmar+One" rel="stylesheet">
 </head>
-  <body>
+    <body>
 
-  <!-- background image -->
-  <div class = "background"></div>
+        <!-- background image -->
+        <div class = "background"></div>
 
-  <!-- a box with the name of the game -->
-  <div class = "game-name">
-    <h1>LEGO COLLECTOR</h1>
-  </div>
+        <!-- a box with the name of the game -->
+        <div class = "game-name">
+            <h1>LEGO COLLECTOR</h1>
+        </div>
 
-  <!-- two separate classes for the directions lines -->
-  <div class = "directions-line-one">
-    <p>Each Lego has a hidden value.</p>
-  </div>
+        <!-- two separate classes for the directions lines -->
+        <div class = "directions-line-one">
+            <p>Each Lego has a hidden value.</p>
+        </div>
 
-   <div class = "directions-line-two">
-    <p>Click the Legos to see if you can match the number!</p>
-  </div>
+        <div class = "directions-line-two">
+            <p>Click the Legos to see if you can match the number!</p>
+        </div>
 
-  <!-- a box with the random computer number -->
-  <div class = "computer-number"></div>
+        <!-- a box with the random computer number -->
+        <div class = "computer-number"></div>
 
-  <!-- a box with the number of total wins and losses -->
-  <div class = "wins-losses"></div>
+        <!-- a box with the number of total wins and losses -->
+        <div class = "wins-losses"></div>
 
-  <!-- box with all of the click images -->
-  <div class = "click-images">
-    <img id="green-lego" src="assets/images/lego-green.png">
-    <img id="blue-lego" src="assets/images/lego-blue.png">
-    <img id="yellow-lego" src="assets/images/lego-yellow.png">
-    <img id="red-lego" src="assets/images/lego-red.png">
-  </div>
+        <!-- box with all of the click images -->
+        <div class = "click-images">
+            <img id="green-lego" src="assets/images/lego-green.png">
+            <img id="blue-lego" src="assets/images/lego-blue.png">
+            <img id="yellow-lego" src="assets/images/lego-yellow.png">
+            <img id="red-lego" src="assets/images/lego-red.png">
+        </div>
 
-  <!-- a box with the sum of the numbers that the user has clicked -->
-  <div id = "user-sum"></div>
+        <!-- a box with the sum of the numbers that the user has clicked -->
+        <div id = "user-sum"></div>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="user-win">
+            <div><p>You Win!</p></div>
+        </div>
+
+        <div id="user-lose">
+            <div><p>You Lose</p></div>
+        </div>
 
 
 
-
-
-
-  </body>
-
-
-
+    </body>
 </html>
