@@ -1,6 +1,8 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html>
 <head>
+    <title>Lego Collector</title>
+
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
@@ -29,8 +31,11 @@
         <!-- a box with the random computer number -->
         <div class = "computer-number"></div>
 
-        <!-- a box with the number of total wins and losses -->
-        <div class = "wins-losses"></div>
+        <!-- a box with the number of total wins  -->
+        <div id = "show-wins"></div>
+
+        <!-- a box with the number of total loses -->
+        <div id = "show-loses"></div>
 
         <!-- box with all of the click images -->
         <div class = "click-images">
@@ -45,17 +50,6 @@
 
         <!-- Trigger/Open The Modal -->
         <button id="myBtn">Open Modal</button>
-
-        <!-- The Modal -->
-        <div id="user-win">
-            <div><p>You Win!</p></div>
-        </div>
-
-        <div id="user-lose">
-            <div><p>You Lose</p></div>
-        </div>
-
-
 
     </body>
 </html>

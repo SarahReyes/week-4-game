@@ -5,13 +5,15 @@
 
 var counter = 0;
 var userSum = 0;
+var wins = 0;
+var loses = 0;
 
 // computer picks a random number between min, max
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 // random number picked for user to guess
-var computerRandom = "Number To Match: " + (getRandomInt(19, 120));
+var computerRandom = (getRandomInt(19, 120));
 console.log(computerRandom);
 
 // assign a number to each lego
@@ -26,7 +28,7 @@ var redLegoNumber = getRandomInt(1, 12);
 
 $(document).ready(function() {
     // display randomly picked computer number in html
-    $('.computer-number').text(computerRandom);
+    $('.computer-number').text("Number To Match: " + computerRandom);
 
 
     // user clicks on the green lego and it returns the value
@@ -35,23 +37,16 @@ $(document).ready(function() {
         console.log(userSum);
         // display the userSum
         $('#user-sum').text("Your Number: " + userSum);
-        // will determine if the user has won
-        if (userSum < computerRandom) {
-            //user can continue clicking
+        // alert if the user wins or loses
+        if (userSum === computerRandom) {
+            alert("You win!");
+            // increment 'wins' by 1
+            wins++;
         }
-        else if (userSum == computerRandom) {
-            // Function for the modal
-            function overlay() {
-            el = document.getElementById("user-win");
-            el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
-            }
-        }
-        else {
-            // Function for the modal
-            function overlay() {
-            el = document.getElementById("user-lose");
-            el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
-            }
+        else if (userSum > computerRandom) {
+            alert("You lose");
+            // increment 'loses' by 1
+            loses++;
         }
 
     });
@@ -61,7 +56,17 @@ $(document).ready(function() {
         console.log(userSum);
         // display the userSum
         $('#user-sum').text("Your Number: " + userSum);
-        // else/ifs will need to go in every one of these functions
+        // alert if the user wins or loses
+        if (userSum === computerRandom) {
+            alert("You win!");
+            // increment 'wins' by 1
+            wins++;
+        }
+        else if (userSum > computerRandom) {
+            alert("You lose");
+            // increment 'loses' by 1
+            loses++;
+        }
     });
     // user clicks on the yellow lego and it returns the value
     $('#yellow-lego').click(function() {
@@ -69,7 +74,17 @@ $(document).ready(function() {
         console.log(userSum);
         // display the userSum
         $('#user-sum').text("Your Number: " + userSum);
-        // else/ifs will need to go in every one of these functions
+        // alert if the user wins or loses
+        if (userSum === computerRandom) {
+            alert("You win!");
+            // increment 'wins' by 1
+            wins++;
+        }
+        else if (userSum > computerRandom) {
+            alert("You lose");
+            // increment 'loses' by 1
+            loses++;
+        }
     });
     // user clicks on the red lego and it returns the value
     $('#red-lego').click(function() {
@@ -77,35 +92,31 @@ $(document).ready(function() {
         console.log(userSum);
         // display the userSum
         $('#user-sum').text("Your Number: " + userSum);
-        // else/ifs will need to go in every one of these functions
+        // alert if the user wins or loses
+        if (userSum === computerRandom) {
+            alert("You win!");
+            // increment 'wins' by 1
+            wins++;
+        }
+        else if (userSum > computerRandom) {
+            alert("You lose");
+            // increment 'loses' by 1
+            loses++;
+        }
     });
-
-
     // display the userSum
     $('#user-sum').text("Your Number: " + userSum);
+
+    // display wins
+    $('#show-wins').text("WINS: " + wins);
+
+    // display loses
+    $('#show-loses').text("LOSES: " + loses);
+
+  //when the game re-starts, the computer picks a new random number between 19 - 120
 
 
 });
 
 
 
-
-    //user's sum box increments by the value of the lego, each time a lego is clicked
-
-
-  //user wins if their total sum is equal to the random computer pick
-
-
-  //user continues to play if their sum is < the random computer pick
-
-
-  //user loses if their sum is > the random computer pick
-
-
-  //the game re-starts when the user wins or loses
-
-
-  //if the user wins, display win++, if the user loses, display losses++
-
-
-  //when the game re-starts, the computer picks a new random number between 19 - 120

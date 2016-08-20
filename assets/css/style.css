@@ -6,7 +6,7 @@ font-family: 'Passion One', cursive;*/
 body {
   font-family: 'Passion One', cursive;
   color: white;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 .background {
   background-image: url(../images/lego-background-lightgray.jpg);
@@ -99,22 +99,26 @@ body {
   margin-top: 320px;
   margin-left: 850px;
 }
-/* The Modal */
-#overlay {
-  visibility: hidden;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width:100%;
-  height:100%;
-  text-align:center;
-  z-index: 1000;
+#show-wins {
+  font-size: 50px;
+  color: #244DBF;
+  height: 200px;
+  width: 200px;
+  letter-spacing: 1px;
+  z-index: 200px;
+  position: fixed;
+  margin-top: 600px;
+  margin-left: 350px;
 }
-#overlay div {
-  width:300px;
-  margin: 100px auto;
-  background-color: #fff;
-  border:1px solid #000;
-  padding:15px;
-  text-align:center;
+#show-loses {
+  font-size: 50px;
+  color: #D93333;
+  height: 200px;
+  width: 200px;
+  letter-spacing: 1px;
+  z-index: 200px;
+  position: fixed;
+  margin-top: 600px;
+  margin-left: 750px;
 }
+
