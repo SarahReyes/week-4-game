@@ -1,55 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
     <title>Lego Collector</title>
 
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+	<!-- Custom fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Londrina+Outline|Passion+One|Sigmar+One" rel="stylesheet">
 </head>
     <body>
+		<div class="container-fluid">
+			<div class="jumbotron text-center">
+				<!-- a box with the name of the game -->
+				<div class="game-name">
+					<h1>LEGO COLLECTOR</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<!-- two separate classes for the directions lines -->
+					<div class="directions">
+						<p>Each Lego has a hidden value.</p>
+						<p>Click the Legos to see if you can match the number!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="click-images">
+					<div class="col-sm-3 text-center">
+						<img id="green-lego" src="assets/images/lego-green.png">
+					</div>
+					<div class="col-sm-3 text-center">
+						<img id="blue-lego" src="assets/images/lego-blue.png">
+					</div>
+					<div class="col-sm-3 text-center">
+						<img id="yellow-lego" src="assets/images/lego-yellow.png">
+					</div>
+					<div class="col-sm-3 text-center">
+						<img id="red-lego" src="assets/images/lego-red.png">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<!-- two separate classes for the directions lines -->
+					<div class="computer-number">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<!-- a box with the sum of the numbers that the user has clicked -->
+					<div id="user-sum"></div>
+				</div>
+			</div>
+			<div class="row">
 
-        <!-- background image -->
-        <div class = "background"></div>
+					<div class="col-sm-6 text-center">
+						<!-- a box with the number of total wins  -->
+						<div id="show-wins"></div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<!-- a box with the number of total loses -->
+				        <div id="show-losses"></div>
+					</div>
+			
+			</div>
+		</div>
 
-        <!-- a box with the name of the game -->
-        <div class = "game-name">
-            <h1>LEGO COLLECTOR</h1>
-        </div>
-
-        <!-- two separate classes for the directions lines -->
-        <div class = "directions-line-one">
-            <p>Each Lego has a hidden value.</p>
-        </div>
-
-        <div class = "directions-line-two">
-            <p>Click the Legos to see if you can match the number!</p>
-        </div>
-
-        <!-- a box with the random computer number -->
-        <div class = "computer-number"></div>
-
-        <!-- a box with the number of total wins  -->
-        <div id = "show-wins"></div>
-
-        <!-- a box with the number of total loses -->
-        <div id = "show-loses"></div>
-
-        <!-- box with all of the click images -->
-        <div class = "click-images">
-            <img id="green-lego" src="assets/images/lego-green.png">
-            <img id="blue-lego" src="assets/images/lego-blue.png">
-            <img id="yellow-lego" src="assets/images/lego-yellow.png">
-            <img id="red-lego" src="assets/images/lego-red.png">
-        </div>
-
-        <!-- a box with the sum of the numbers that the user has clicked -->
-        <div id = "user-sum"></div>
-
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Open Modal</button>
+		<!-- jQuery library (necessary for Bootstrap & other JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified bootstrap javascript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Javascript file connection -->
+	    <script type="text/javascript" src="assets/javascript/game.js"></script>
+		<!-- Backstretch Plug In -->
+		<script type="text/javascript" src="assets/javascript/backstretch_plugin.min.js"></script>
 
     </body>
 </html>

@@ -8,6 +8,8 @@ var userSum = 0;
 var wins = 0;
 var loses = 0;
 
+// backstretch used for the background images
+
 // computer picks a random number between min, max
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -27,6 +29,10 @@ var redLegoNumber = getRandomInt(1, 12);
     console.log(redLegoNumber);
 
 $(document).ready(function() {
+
+	// backstretch used for the background image
+	$(".jumbotron").backstretch("assets/images/lego-background-lightgray.jpg");
+
     // display randomly picked computer number in html
     $('.computer-number').text("Number To Match: " + computerRandom);
 
@@ -111,12 +117,9 @@ $(document).ready(function() {
     $('#show-wins').text("WINS: " + wins);
 
     // display loses
-    $('#show-loses').text("LOSES: " + loses);
+    $('#show-losses').text("LOSSES: " + loses);
 
   //when the game re-starts, the computer picks a new random number between 19 - 120
 
 
 });
-
-
-

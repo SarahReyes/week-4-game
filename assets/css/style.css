@@ -2,123 +2,81 @@
 font-family: 'Sigmar One', cursive;
 font-family: 'Londrina Outline', cursive;
 font-family: 'Bungee Outline', cursive;
-font-family: 'Passion One', cursive;*/
+font-family: 'Passion One', cursive;
+
+COLORS:
+GREEN: #2AA25A
+BLUE: #3A578D
+YELLOW: #E7BE24
+RED: #CD3232
+*/
 body {
   font-family: 'Passion One', cursive;
-  color: white;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
-.background {
-  background-image: url(../images/lego-background-lightgray.jpg);
-  background-repeat: no-repeat;
-  width: 1280px;
-  height: 800px;
-  z-index: 10px;
-  position: fixed;
-  filter: blur(3px) grayscale(60%);
-  -webkit-filter: blur(3px) grayscale(60%);
-  -moz-filter: blur(3px) grayscale(60%);
-  -o-filter: blur(3px) grayscale(60%);
-  -ms-filter: blur(3px) grayscale(60%);
+.container-fluid {
+  height: 100%;
+  width: 100%
+}
+.jumbotron {
+  margin-top: 20px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.jumbotron h1 {
+  font-size: 100px;
 }
 .game-name {
-  font-size: 85px;
   letter-spacing: 10px;
-  margin-top: 25px;
-  margin-left: 330px;
-  z-index: 15px;
-  position: fixed;
 }
-.directions-line-one {
+.directions {
   font-size: 40px;
-  color: #FEEF1C;
-  letter-spacing: 2px;
-  margin-top: 125px;
-  margin-left: 400px;
-  z-index: 15px;
-  position: fixed;
-}
-.directions-line-two {
-  font-size: 40px;
-  color: #FEEF1C;
-  letter-spacing: 2px;
-  margin-top: 170px;
-  margin-left: 220px;
-  z-index: 15px;
-  position: fixed;
+  color: #FFFFFF;
+  letter-spacing: 2.5px;
+  background-color: #2AA25A;
+  margin-top: 0px;
+  padding: 50px;
 }
 .computer-number {
   font-size: 60px;
-  height: 100px;
-  width: 300px;
-  letter-spacing: 1px;
-  margin-top: 240px;
-  margin-left: 250px;
-  z-index: 15px;
-  position: fixed;
+  letter-spacing: 2.5px;
+  background-color: #3A578D;
+  color: #FFFFFF;
+  padding-top: 50px;
 }
 #user-sum {
   font-size: 60px;
-  height: 100px;
-  width: 450px;
-  letter-spacing: 1px;
-  z-index: 100px;
-  position: fixed;
-  margin-top: 270px;
-  margin-left: 660px;
+  letter-spacing: 2.5px;
+  background-color: #3A578D;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+.click-images {
+  padding: 50px;
+  background-color: #FFFFFF;
 }
 #green-lego {
-  z-index: 100px;
-  position: fixed;
-  height: 180px;
-  width: 180px;
-  margin-top: 380px;
-  margin-left: 200px;
+  height: 60%;
+  width: 60%;
 }
 #blue-lego {
-  z-index: 100px;
-  position: fixed;
-  height: 230px;
-  width: 230px;
-  margin-top: 380px;
-  margin-left: 410px;
+  height: 80%;
+  width: 80%;
 }
 #yellow-lego {
-  z-index: 100px;
-  position: fixed;
-  height: 180px;
-  width: 180px;
-  margin-top: 380px;
-  margin-left: 680px;
+  height: 70%;
+  width: 70%;
 }
 #red-lego {
-  z-index: 100px;
-  position: fixed;
-  height: 300px;
-  width: 300px;
-  margin-top: 320px;
-  margin-left: 850px;
+  height: 100%;
+  width: 100%;
 }
 #show-wins {
   font-size: 50px;
-  color: #244DBF;
-  height: 200px;
-  width: 200px;
-  letter-spacing: 1px;
-  z-index: 200px;
-  position: fixed;
-  margin-top: 600px;
-  margin-left: 350px;
+  color: #FFFFFF;
+  letter-spacing: 2.5px;
 }
-#show-loses {
+#show-losses {
   font-size: 50px;
-  color: #D93333;
-  height: 200px;
-  width: 200px;
-  letter-spacing: 1px;
-  z-index: 200px;
-  position: fixed;
-  margin-top: 600px;
-  margin-left: 750px;
+  color: #FFFFFF;
+  letter-spacing: 2.5px;
 }
-
