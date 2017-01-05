@@ -6,7 +6,7 @@
 var counter = 0;
 var userSum = 0;
 var wins = 0;
-var loses = 0;
+var losses = 0;
 
 // backstretch used for the background images
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
         console.log(userSum);
         // display the userSum
         $('#user-sum').text("Your Number: " + userSum);
-        // alert if the user wins or loses
+        // alert if the user wins or losses
         if (userSum === computerRandom) {
             alert("You win!");
             // increment 'wins' by 1
@@ -51,8 +51,8 @@ $(document).ready(function() {
         }
         else if (userSum > computerRandom) {
             alert("You lose");
-            // increment 'loses' by 1
-            loses++;
+            // increment 'losses' by 1
+            losses++;
         }
 
     });
@@ -62,7 +62,7 @@ $(document).ready(function() {
         console.log(userSum);
         // display the userSum
         $('#user-sum').text("Your Number: " + userSum);
-        // alert if the user wins or loses
+        // alert if the user wins or losses
         if (userSum === computerRandom) {
             alert("You win!");
             // increment 'wins' by 1
@@ -70,8 +70,8 @@ $(document).ready(function() {
         }
         else if (userSum > computerRandom) {
             alert("You lose");
-            // increment 'loses' by 1
-            loses++;
+            // increment 'losses' by 1
+            losses++;
         }
     });
     // user clicks on the yellow lego and it returns the value
@@ -80,7 +80,7 @@ $(document).ready(function() {
         console.log(userSum);
         // display the userSum
         $('#user-sum').text("Your Number: " + userSum);
-        // alert if the user wins or loses
+        // alert if the user wins or losses
         if (userSum === computerRandom) {
             alert("You win!");
             // increment 'wins' by 1
@@ -88,8 +88,8 @@ $(document).ready(function() {
         }
         else if (userSum > computerRandom) {
             alert("You lose");
-            // increment 'loses' by 1
-            loses++;
+            // increment 'losses' by 1
+            losses++;
         }
     });
     // user clicks on the red lego and it returns the value
@@ -98,7 +98,7 @@ $(document).ready(function() {
         console.log(userSum);
         // display the userSum
         $('#user-sum').text("Your Number: " + userSum);
-        // alert if the user wins or loses
+        // alert if the user wins or losses
         if (userSum === computerRandom) {
             alert("You win!");
             // increment 'wins' by 1
@@ -106,18 +106,18 @@ $(document).ready(function() {
         }
         else if (userSum > computerRandom) {
             alert("You lose");
-            // increment 'loses' by 1
-            loses++;
+            // increment 'losses' by 1
+            losses++;
         }
     });
     // display the userSum
     $('#user-sum').text("Your Number: " + userSum);
 
     // display wins
-    $('#show-wins').text("WINS: " + wins);
+    $('.show-wins').text("WINS: " + wins);
 
-    // display loses
-    $('#show-losses').text("LOSSES: " + loses);
+    // display losses
+    $('.show-losses').text("LOSSES: " + losses);
 
   //when the game re-starts, the computer picks a new random number between 19 - 120
 
