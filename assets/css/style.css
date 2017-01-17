@@ -15,10 +15,12 @@ body {
 }
 .container-fluid {
   height: 100%;
-  width: 100%
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .jumbotron {
-  margin-top: 20px;
+  margin-top: 0px;
   color: #ffffff;
   margin-bottom: 0px;
 }
@@ -83,4 +85,8 @@ body {
   color: #FFFFFF;
   letter-spacing: 2.5px;
   padding: 30px;
+}
+#wins-losses {
+	background-color: #CD3232;
+
 }
